@@ -1,1 +1,3 @@
-[`.data/demo.gif`](https://github.com/Jasson-AXE/AsciiArtify/blob/12bb31cf43bff06802be172af35f4f08b83983fb/.data/demo.gif)
+Adding a GIF from an external URL to markdown.
+
+![color picker]([https://bobbyhadz.com/images/blog/change-vscode-integrated-terminal-colors/hover-over-color.gif](https://raw.githubusercontent.com/Jasson-AXE/AsciiArtify/main/.data/demo.gif)https://raw.githubusercontent.com/Jasson-AXE/AsciiArtify/main/.data/demo.gif)
