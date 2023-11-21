@@ -1,1 +1,1 @@
-.data/demo.gif
+`.data/demo.gif`
