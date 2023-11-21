@@ -1,1 +1,1 @@
-[`.data/demo.gif`](https://github.com/Jasson-AXE/AsciiArtify/blob/12bb31cf43bff06802be172af35f4f08b83983fb/.data/demo.gif)https://github.com/Jasson-AXE/AsciiArtify/blob/12bb31cf43bff06802be172af35f4f08b83983fb/.data/demo.gif
+[`.data/demo.gif`](https://github.com/Jasson-AXE/AsciiArtify/blob/12bb31cf43bff06802be172af35f4f08b83983fb/.data/demo.gif)
