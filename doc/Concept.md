@@ -1,6 +1,6 @@
 Adding a GIF from an external URL to markdown.
 
-![Image](../assets/demo.gif)
+![Image](../.data/demo.gif)
 
 |         Soft        |   Minikube   |       Kide    |     K3d         |                                            |
 |---------------------|--------------|---------------|-----------------|--------------------------------------------|
