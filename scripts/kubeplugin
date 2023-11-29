@@ -1,17 +1,24 @@
-!/bin/bash
+#!/bin/bash
 
 # Define command-line arguments
+RESOURCE_TYPE=$1  # Змінена змінна $0 на $1
+NAMESPACE=$2      # Додана змінна для namespace
 
-RESOURCE_TYPE=$0
+# Перевіряємо чи передані аргументи
+if [ -z "$RESOURCE_TYPE" ] || [ -z "$NAMESPACE" ]; then
+  echo "Usage: $0 <resource_type> <namespace>"
+  exit 1
+fi
 
 # Retrieve resource usage statistics from Kubernetes
-kubectl $2 $RESOURCE_TYPE -n $1 | tail -n +2 | while read line
+kubectl get $RESOURCE_TYPE -n $NAMESPACE --no-headers=true | while read line
 do
   # Extract CPU and memory usage from the output
   NAME=$(echo $line | awk '{print $1}')
   CPU=$(echo $line | awk '{print $2}')
   MEMORY=$(echo $line | awk '{print $3}')
 
-# Output the statistics to the console
-# "Resource, Namespace, Name, CPU, Memory"
+  # Output the statistics to the console
+  echo "Resource, Namespace, Name, CPU, Memory"
+  echo "$RESOURCE_TYPE, $NAMESPACE, $NAME, $CPU, $MEMORY"
 done
